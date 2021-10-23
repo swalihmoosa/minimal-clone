@@ -38,10 +38,11 @@ const Section = styled.section`
     display: flex;
     justify-content: space-between;
     background:url(${bg}) no-repeat;
-    background-position: right;
-    align-items: center;`
+    background-position: center;
+    align-items: center;
+    background-size: contain;`
 const Left = styled.div`
-    width: 60%;
+    width: 50%;
     position: relative;`
 const Drk = styled.div`
     position: absolute;
@@ -57,6 +58,10 @@ const H4 = styled.h4`
 const H5 = styled.h5`
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 2%;
+    margin-bottom: 7%;
     color: #fff;`
-const P = styled.p``
+const P = styled.p`
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8%;`
