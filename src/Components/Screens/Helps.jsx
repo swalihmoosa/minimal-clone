@@ -76,7 +76,27 @@ const Ul = styled.ul`
     display: flex;
     justify-content: space-between;`
 const Li = styled.li`
-    width: 30%;`
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2% 2% 6% 2%;
+    border-radius: 20px;
+    &:first-child,&:last-child{
+        background: #f4f6f8;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &:nth-child(2n){
+        transform: translateY(-40px);&:hover{
+            transform: scale(1.1);
+        }
+    }
+    &:last-child{
+        transform: translateY(40px);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }`
 const Top = styled.div`
     width: 50%;
     margin: 0 auto;
