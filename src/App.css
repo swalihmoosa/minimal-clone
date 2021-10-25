@@ -53,3 +53,27 @@ img{
 .grey div img{
 	filter:invert(1) sepia(1) saturate(209) hue-rotate( 180deg );
 }
+ul li#green{
+	background: green;
+}
+ul li#purple{
+	background: purple;
+}
+ul li#cyan{
+	background: cyan;
+}
+ul li#blue{
+	background: blue;
+}
+ul li#orange{
+	background: orange;
+}
+ul li#red{
+	background: red;
+}
+section#home.green .button{
+	background: #4eac56;
+}
+section#home.blue .button{
+	background: blue;
+}

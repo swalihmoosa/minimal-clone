@@ -5,6 +5,12 @@ import bottomimg from "../Images/home/theme-color/block2-default.png"
 import mainimg from "../Images/home/theme-color/screen-default.png"
 import rightimg from "../Images/home/theme-color/sidebar-default.png"
 import styled from 'styled-components'
+import { green } from '../../App'
+import { purple } from '../../App'
+import { cyan } from '../../App'
+import { blue } from '../../App'
+import { orange } from '../../App'
+import { red } from '../../App'
 
 export default function Theme() {
     return (
@@ -34,11 +40,32 @@ export default function Theme() {
                     </Right>
                 </Div>
             </section>
+            <Ul>
+                <Li id="green" onClick={green}>
+
+                </Li>
+                <Li id="purple" onClick={purple}>
+                    
+                </Li>
+                <Li id="cyan" onClick={cyan}>
+                    
+                </Li>
+                <Li id="blue" onClick={blue}>
+                    
+                </Li>
+                <Li id="orange" onClick={orange}>
+                    
+                </Li>
+                <Li id="red" onClick={red}>
+                    
+                </Li>
+            </Ul>
         </Themesec>
     )
 }
 const Themesec = styled.section`
-    padding: 8% 0;`
+    padding: 8% 0;
+    position: relative;`
 const H5 = styled.h5`
     font-size: 20px;
     color: #85888b;
@@ -68,3 +95,19 @@ const Bottom = styled.div`
 const Right = styled.div`
     position: absolute;
     top: 0;`
+const Ul = styled.ul`
+    position:absolute;
+    top: 30%;
+    right: 10%;`
+const Li = styled.li`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    &:hover{
+        cursor:pointer;
+    }`
+

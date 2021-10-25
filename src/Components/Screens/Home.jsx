@@ -11,10 +11,11 @@ import three from "../Images/home/ic_material.svg"
 import four from "../Images/home/ic_react.svg"
 import five from "../Images/home/ic_js.svg"
 import six from "../Images/home/ic_ts.svg"
+import cog from "../Images/home/cogs-solid.svg"
 
 export default function Home() {
     return (
-        <Homesec>
+        <Homesec id="home">
             <section className="wrapper">
                 <Header>
                     <H1>
@@ -54,7 +55,7 @@ export default function Home() {
                             </Navlist>
                         </Navul>
                         
-                        <Purchase href="/">
+                        <Purchase href="/" className="button">
                             Purchase Now
                         </Purchase>
                     </Nav>
@@ -75,7 +76,7 @@ export default function Home() {
                                 Preview in Sketch Cloud
                             </Dp>
                         </Prev>
-                        <Live>
+                        <Live className="button">
                             <Thunder>
                                 <Img src={bolt} alt="Thunder" />
                             </Thunder>
@@ -108,6 +109,9 @@ export default function Home() {
                         <img src={hero} alt="Spotlight" />
                     </Right>
                 </Spot>
+                <Settings id="settings">
+                    <img src={cog} alt="Setting" />
+                </Settings>
             </section>
         </Homesec>
     )
@@ -227,3 +231,11 @@ const Company = styled.li`
 const Right = styled.div`
     width: 47%;
     opacity: 0.2;`
+const Settings = styled.div`
+    position: fixed;
+    width: 50px;
+    top: 50%;
+    right: 0;
+    background: #fff;
+    padding: 9px;
+    border-radius: 50% 0 40% 50%;`
