@@ -274,6 +274,15 @@ export default function Pricing() {
                         </Plan>
                     </Li>
                 </Ul>
+                <Still>
+                    Still have questions?
+                </Still>
+                <Describe>
+                    Please describe Your case to recieve the most accurate advice.
+                </Describe>
+                <Contact href="/">
+                    Contact Us
+                </Contact>
             </section>
         </Pricingsec>
     )
@@ -299,7 +308,8 @@ const Choose = styled.p`
     margin-bottom: 8%;`
 const Ul = styled.ul`
     display: flex;
-    justify-content: space-between;`
+    justify-content: space-between;
+    margin-bottom: 10%;`
 const Li = styled.li`
     width: 30%;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -371,4 +381,30 @@ const Plan = styled.a`
             background: #fff;
             color: #4eac56;
         }
+    }`
+const Still = styled.h5`
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 2%;
+    text-align: center;`
+const Describe = styled.p`
+    color: #c3c3c3;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2%;`
+const Contact = styled.a`
+    width: 20%;
+    background: #4eac56;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #4eac56;
+    &:hover{
+        background:#fff;
+        color:#4eac56;
     }`
