@@ -47,3 +47,9 @@ img{
 	width: 100%;
 	display: block;
 }
+.grey p{
+	color: #85888b;
+}
+.grey div img{
+	filter:invert(1) sepia(1) saturate(209) hue-rotate( 180deg );
+}
