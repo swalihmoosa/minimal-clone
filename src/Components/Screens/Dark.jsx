@@ -40,28 +40,136 @@ const Section = styled.section`
     background:url(${bg}) no-repeat;
     background-position: center;
     align-items: center;
-    background-size: contain;`
+    background-size: contain;
+    flex-wrap: wrap;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Left = styled.div`
     width: 50%;
-    position: relative;`
+    position: relative;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        width: 60%;
+        margin:0 auto 10%;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+        width: 75%;
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Drk = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Lte = styled.div``
 const Right = styled.div`
-    width: 35%;`
+    width: 35%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        margin:0 auto;
+        width: 75%;
+        text-align: center;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        width: 90%;
+    }
+    @media all and (max-width: 480px){
+        width: 100%;
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const H4 = styled.h4`
     font-size: 20px;
     color: #85888b;
     font-weight: 700;
-    margin-bottom: 2%;`
+    margin-bottom: 2%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        font-size: 17px;
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const H5 = styled.h5`
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 7%;
-    color: #fff;`
+    color: #fff;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const P = styled.p`
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 8%;`
+    margin-bottom: 8%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
