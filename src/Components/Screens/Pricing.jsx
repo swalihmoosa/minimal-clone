@@ -9,7 +9,7 @@ import left from "../Images/icons/chevron-down-solid.svg"
 
 export default function Pricing() {
     return (
-        <Pricingsec>
+        <Pricingsec id="pricing">
             <section className="wrapper" >
                 <H5>
                     PRICING PLANS
@@ -95,7 +95,7 @@ export default function Pricing() {
                                 <img src={left} alt="Arrow" />
                             </Arrow>
                         </Learn>
-                        <Plan href="/">
+                        <Plan href="/" className="border">
                             Choose Plan
                         </Plan>
                     </Li>
@@ -182,7 +182,7 @@ export default function Pricing() {
                                 <img src={left} alt="Arrow" />
                             </Arrow>
                         </Learn>
-                        <Plan className="bg" href="/">
+                        <Plan className="button" href="/">
                             Choose Plan
                         </Plan>
                     </Li>
@@ -269,7 +269,7 @@ export default function Pricing() {
                                 <img src={left} alt="Arrow" />
                             </Arrow>
                         </Learn>
-                        <Plan href="/">
+                        <Plan href="/" className="border">
                             Choose Plan
                         </Plan>
                     </Li>
@@ -280,7 +280,7 @@ export default function Pricing() {
                 <Describe>
                     Please describe Your case to recieve the most accurate advice.
                 </Describe>
-                <Contact href="/">
+                <Contact href="/" className="button">
                     Contact Us
                 </Contact>
             </section>
@@ -367,20 +367,14 @@ const Plan = styled.a`
     border-radius: 15px;
     font-weight: 700;
     text-align: center;
-    border:2px solid #4eac56;
     width: 100%;
-    color: #4eac56;
-    &:hover{
-        background: #4eac56;
-        color: #fff;
+    &.border{
+        color: #4eac56;
+        border:2px solid #4eac56;
     }
-    &.bg{
+    &.button{
         background: #4eac56;
         color: #fff;
-        &:hover{
-            background: #fff;
-            color: #4eac56;
-        }
     }`
 const Still = styled.h5`
     font-size: 40px;
@@ -402,9 +396,4 @@ const Contact = styled.a`
     font-weight: 700;
     text-align: center;
     margin: 0 auto;
-    display: block;
-    border: 2px solid #4eac56;
-    &:hover{
-        background:#fff;
-        color:#4eac56;
-    }`
+    display: block;`

@@ -71,9 +71,158 @@ ul li#orange{
 ul li#red{
 	background: red;
 }
+
 section#home.green .button{
 	background: #4eac56;
 }
+section#home.green b{
+	color: #4eac56;
+}
+section#home.green ul li a:hover{
+	color: #4eac56 ;
+}
+section#pricing.green .button{
+	background: #4eac56;
+}
+section#pricing.green .border{
+	color: #4eac56;
+    border:2px solid #4eac56;
+}
+footer#footer.green .bg{
+	background: linear-gradient(to right,#4eac56 ,#388256);
+}
+footer#footer.green p a{
+	color: #4eac56;
+}
+
+section#home.purple .button{
+	background: #7742dc;
+}
+section#home.purple b{
+	color: #7742dc;
+}
+section#home.purple ul li a:hover{
+	color: #7742dc ;
+}
+section#pricing.purple .button{
+	background: #7742dc;
+}
+section#pricing.purple .border{
+	color: #7742dc;
+    border:2px solid #7742dc;
+}
+footer#footer.purple .bg{
+	background: linear-gradient(to right,#7032d4 ,#4c1fa9);
+}
+footer#footer.purple p a{
+	color: #7742dc;
+}
+
+section#home.cyan .button{
+	background: #52caf9;
+}
+section#home.cyan b{
+	color: #52caf9;
+}
+section#home.cyan ul li a:hover{
+	color: #52caf9 ;
+}
+section#pricing.cyan .button{
+	background: #52caf9;
+}
+section#pricing.cyan .border{
+	color: #52caf9;
+    border:2px solid #52caf9;
+}
+footer#footer.cyan .bg{
+	background: linear-gradient(to right,#18b2e7 ,#0f7dbc);
+}
+footer#footer.cyan p a{
+	color: #52caf9;
+}
+
 section#home.blue .button{
-	background: blue;
+	background: #0b45f5;
+}
+section#home.blue b{
+	color: #0b45f5;
+}
+section#home.blue ul li a:hover{
+	color: #0b45f5 ;
+}
+section#pricing.blue .button{
+	background: #0b45f5;
+}
+section#pricing.blue .border{
+	color: #0b45f5;
+    border:2px solid #0b45f5;
+}
+footer#footer.blue .bg{
+	background: linear-gradient(to right,#003fef ,#002bc1);
+}
+footer#footer.blue p a{
+	color: #0b45f5;
+}
+
+section#home.orange .button{
+	background: #f5a941;
+}
+section#home.orange b{
+	color: #f5a941;
+}
+section#home.orange ul li a:hover{
+	color: #f5a941 ;
+}
+section#pricing.orange .button{
+	background: #f5a941;
+}
+section#pricing.orange .border{
+	color: #f5a941;
+    border:2px solid #f5a941;
+}
+footer#footer.orange .bg{
+	background: linear-gradient(to right,#e39527 ,#bf7019);
+}
+footer#footer.orange p a{
+	color: #f5a941;
+}
+
+section#home.red .button{
+	background: #ed3833;
+}
+section#home.red b{
+	color: #ed3833;
+}
+section#home.red ul li a:hover{
+	color: #ed3833 ;
+}
+section#pricing.red .button{
+	background: #ed3833;
+}
+section#pricing.red .border{
+	color: #ed3833;
+    border:2px solid #ed3833;
+}
+footer#footer.red .bg{
+	background: linear-gradient(to right,#f92e30 ,#c31c33);
+}
+footer#footer.red p a{
+	color: #f92e30;
+}
+
+
+
+@media all and (max-width: 1280px){
+}
+@media all and (max-width: 980px){
+}
+@media all and (max-width: 768px){
+}
+@media all and (max-width: 640px){
+}
+@media all and (max-width: 480px){
+}
+@media all and (max-width: 360px){
+}
+@media all and (max-width: 320px){
 }

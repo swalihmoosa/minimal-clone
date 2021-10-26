@@ -76,7 +76,7 @@ export default function Home() {
                                 Preview in Sketch Cloud
                             </Dp>
                         </Prev>
-                        <Live className="button">
+                        <Live className="button" href="/">
                             <Thunder>
                                 <Img src={bolt} alt="Thunder" />
                             </Thunder>
@@ -122,12 +122,44 @@ const Header = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0;`
+    padding: 2% 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const H1 = styled.h1`
     width: 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;`
+    align-items: center;
+    @media all and (max-width: 1280px){
+        width: 15%;
+    }
+    @media all and (max-width: 980px){
+        width: 20%;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        width: 30%;
+    }
+    @media all and (max-width: 480px){
+        width: 40%;
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Logoo = styled.div``
 const V = styled.p`
     background: #1a314a;
@@ -135,18 +167,77 @@ const V = styled.p`
     color: #0c52b4;
     padding: 2px 6px;
     font-weight: 700;
-    margin-left: 7px;`
+    margin-left: 7px;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
-    align-items: center;`
+    align-items: center;
+    @media all and (max-width: 1280px){
+        width: 80%;
+    }
+    @media all and (max-width: 980px){
+        display: none;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Navul = styled.ul`
     display: flex;
     justify-content: space-between;
     width: 75%;
-    text-align: center;`
+    text-align: center;
+    @media all and (max-width: 1280px){
+        width: 63%;
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Navlist = styled.li`
-    width: 24%;`
+    width: 24%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const A = styled.a`
     color: #fff;
     font-weight: 700;`
@@ -154,10 +245,38 @@ const Page = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 23%;`
+    width: 23%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Arrowdiv = styled.div`
     width: 13%;
-    margin-left: 10px;`
+    margin-left: 10px;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Img = styled.img`
     filter: invert(1);`
 const Purchase = styled.a`
@@ -169,22 +288,79 @@ const Purchase = styled.a`
     font-weight: 700;
     text-align:center;
     box-shadow: 0px 27px 34px 0px rgb(78 172 86 / 25%);
-    border:2px solid #4eac56;
-    &:hover{
-        color: #4eac56;
-        background: #fff;
+    @media all and (max-width: 1280px){
+        width: 27%;
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
     }`
 const Spot = styled.section`
     padding: 5% 0;
     display: flex;
-    justify-content: space-between;`
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Left = styled.div`
-    width: 47%;`
+    width: 47%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        width: 75%;
+        margin: 0 auto;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const H4 = styled.h4`
     font-size: 60px;
     color: #fff;
     font-weight: 700;
-    margin-bottom: 8%;`
+    margin-bottom: 8%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        font-size: 45px;
+    }
+    @media all and (max-width: 480px){
+        font-size: 43px;
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const B = styled.b`
     color: #4eac56;
     font-weight: 700;`
@@ -192,45 +368,201 @@ const P = styled.p`
     color: #c3c3c3;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 8%;`
+    margin-bottom: 8%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+        margin-bottom: 15%;
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Prev = styled.div`
     display: flex;
     justify-content: space-between;
     width: 38%;
-    margin-bottom: 8%;`
+    margin-bottom: 8%;
+    @media all and (max-width: 1280px){
+        width: 53%;
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        width: 66%;
+    }
+    @media all and (max-width: 480px){
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    @media all and (max-width: 360px){
+        width: 100%;
+    }
+    @media all and (max-width: 320px){
+    }`
 const Diamond = styled.div`
-    width: 10%;`
+    width: 10%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Dp = styled.p`
     color: #c3c3c3;
     font-size: 16px;
     font-weight: 700;
-    text-decoration: underline;`
-const Live = styled.div`
+    text-decoration: underline;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
+const Live = styled.a`
     background: #4eac56;
     padding: 15px 25px;
     border-radius: 15px;
     margin-bottom: 8%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     width: 35%;
     box-shadow: 0px 27px 34px 0px rgb(78 172 86 / 25%);
-    cursor:pointer;`
+    @media all and (max-width: 1280px){
+        width: 60%;
+    }
+    @media all and (max-width: 980px){
+        width: 38%;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        width: 55%;
+    }
+    @media all and (max-width: 480px){
+        width: 75%;
+        margin-bottom: 15%;
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Thunder = styled.div`
-    width: 10%;`
+    width: 10%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Tp = styled.p`
     color: #fff;
     width: 85%;
     font-weight: 700;
-    text-align: center;`
+    text-align: center;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Companies = styled.ul`
     display: flex;
     justify-content: space-between;
-    width: 55%;`
+    width: 55%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        margin-bottom: 5%;
+    }
+    @media all and (max-width: 768px){
+        width: 65%;
+    }
+    @media all and (max-width: 640px){
+        width: 100%;
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Company = styled.li`
-    width: 13%;`
+    width: 13%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Right = styled.div`
     width: 47%;
-    opacity: 0.2;`
+    opacity: 0.2;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        width: 75%;
+        margin: 0 auto 5%;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Settings = styled.div`
     position: fixed;
     width: 50px;

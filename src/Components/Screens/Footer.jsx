@@ -5,9 +5,9 @@ import logo from "../Images/brand/logo_single.svg"
 
 export default function Footer() {
     return (
-        <Footersec>
+        <Footersec id="footer">
             <section className="wrapper">
-                <Div>
+                <Div className="bg">
                     <Left>
                         <img src={rocket} alt="Rocket" />
                     </Left>
@@ -55,7 +55,7 @@ const Purchase = styled.a`
     background: #fff;
     padding: 15px 25px;
     border-radius: 15px;
-    color: #4eac56;
+    color: #000;
     font-weight: 700;
     text-align: center;
     display: block;
