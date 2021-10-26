@@ -12,6 +12,8 @@ import four from "../Images/home/ic_react.svg"
 import five from "../Images/home/ic_js.svg"
 import six from "../Images/home/ic_ts.svg"
 import cog from "../Images/home/cogs-solid.svg"
+import menu from "../Images/icons/chevron-circle-down-solid.svg"
+import close from "../Images/icons/times-circle-solid.svg"
 
 export default function Home() {
     return (
@@ -59,6 +61,41 @@ export default function Home() {
                             Purchase Now
                         </Purchase>
                     </Nav>
+                    <Menudiv id="menudiv" onClick={active}>
+                        <img src={menu} alt="Menu" />
+                    </Menudiv>
+                    <Closediv id="closediv" onClick={inactive}>
+                        <img src={close} alt="Close" />
+                    </Closediv>
+                    <Mobleft id="left">
+                        <Mobul>
+                            <Moblist>
+                                <A href="/" >
+                                Home
+                                </A>
+                            </Moblist>
+                            <Moblist>
+                                <A href="/" >
+                                Components
+                                </A>
+                            </Moblist>
+                            <Moblist>
+                                <A href="/" >
+                                Pages
+                                </A>
+                            </Moblist>
+                            <Moblist>
+                                <A href="/" >
+                                Documentation
+                                </A>
+                            </Moblist>
+                            <Moblist>
+                                <A href="/" >
+                                Purchase Now
+                                </A>
+                            </Moblist>
+                        </Mobul>
+                    </Mobleft>
                 </Header>
                 <Spot>
                     <Left>
@@ -123,6 +160,7 @@ const Header = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 2% 0;
+    position:relative;
     @media all and (max-width: 1280px){
     }
     @media all and (max-width: 980px){
@@ -393,8 +431,10 @@ const Prev = styled.div`
         width: 53%;
     }
     @media all and (max-width: 980px){
+        width:42%;
     }
     @media all and (max-width: 768px){
+        width:49%;
     }
     @media all and (max-width: 640px){
         width: 66%;
@@ -572,3 +612,102 @@ const Settings = styled.div`
     background: #fff;
     padding: 9px;
     border-radius: 50% 0 40% 50%;`
+
+const Mobleft = styled.nav`
+    background:#fff;
+    border-radius: 15px;
+    position: fixed;
+    transition: all 0.4s ease-in;
+    left: -300px;
+    z-index:25;`
+const Mobul = styled.ul`
+    border-radius: 15px;
+    height:100%;
+    a{
+        color:#fff;
+        margin: 0 auto;
+    }`
+const Moblist = styled.li`
+    height:20%;
+    text-align:center;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    &:nth-child(1){
+        background:#3e979b;
+    }
+    &:nth-child(2){
+        background:#6db464;
+    }
+    &:nth-child(3){
+        background:#f3c14e;
+    }
+    &:nth-child(4){
+        background:#f78055;
+    }   
+    &:last-child{
+        margin-bottom: 0px;
+        background:#c97694;        
+    }`
+const Menudiv = styled.div`
+    display:none;
+    width: 40px;    
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        display:block;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
+const Closediv = styled.div`
+    display:none;
+    width: 40px;
+    position: fixed;
+    right:0;
+    transform: rotateX(90deg);    
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        display:block;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
+
+
+function active(){
+    var left = document.getElementById("left")
+    var closediv = document.getElementById("closediv")
+
+    left.classList.add("nav_active_left");
+    left.classList.remove("nav_inactive_left");
+    closediv.classList.add("closediv_active");
+    closediv.classList.remove("closediv_inactive");
+
+}
+
+function inactive(){
+    var left = document.getElementById("left")
+    var closediv = document.getElementById("closediv")
+
+    left.classList.add("nav_inactive_left");
+    left.classList.remove("nav_active_left");
+    closediv.classList.add("closediv_inactive");
+    closediv.classList.remove("closediv_active");
+}
+

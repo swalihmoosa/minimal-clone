@@ -211,18 +211,26 @@ footer#footer.red p a{
 }
 
 
-
-@media all and (max-width: 1280px){
+nav.nav_active_left{
+	position: fixed; 
+	left: 0; 
+	right: 0; 
+	margin-left: auto;
+	top: 0;
+	height: 100%; 
+	margin-right: auto;
+	transform: rotate(360deg);
 }
-@media all and (max-width: 980px){
+nav.nav_inactive_left{
+	transform: rotate(-360deg);
+    position: fixed;
+    transition: all 0.4s ease-in;
+    left: -300px;
 }
-@media all and (max-width: 768px){
+div.closediv_active{
+	transform: rotateX(0);
+	z-index: 26;
 }
-@media all and (max-width: 640px){
-}
-@media all and (max-width: 480px){
-}
-@media all and (max-width: 360px){
-}
-@media all and (max-width: 320px){
+div.closediv_inactive{
+	transform: rotateX(90deg);
 }
