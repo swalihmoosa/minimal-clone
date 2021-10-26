@@ -253,3 +253,13 @@ div.closediv_active{
 div.closediv_inactive{
 	transform: rotateX(90deg);
 }
+
+div#settings_div.active{
+	right: 0;
+}
+div#settings_div.left{
+	left: 0;
+}
+div#settings_div.right{
+	right: 0;
+}

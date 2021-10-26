@@ -14,6 +14,12 @@ import six from "../Images/home/ic_ts.svg"
 import cog from "../Images/home/cogs-solid.svg"
 import menu from "../Images/icons/chevron-circle-down-solid.svg"
 import close from "../Images/icons/times-circle-solid.svg"
+import { green } from '../../App'
+import { purple } from '../../App'
+import { cyan } from '../../App'
+import { blue } from '../../App'
+import { orange } from '../../App'
+import { red } from '../../App'
 
 export default function Home() {
     return (
@@ -146,15 +152,15 @@ export default function Home() {
                         <img src={hero} alt="Spotlight" />
                     </Right>
                 </Spot>
-                <Settings id="settings">
+                <Settings id="settings" onClick={set}>
                     <img src={cog} alt="Setting" />
                 </Settings>
-                <Setting>
+                <Setting id="settings_div">
                     <Head>
                         <S>
                             Settings
                         </S>
-                        <Headclose>
+                        <Headclose onClick={setinactive}>
                             <img src={close} alt="Close" />
                         </Headclose>
                     </Head>
@@ -163,7 +169,7 @@ export default function Home() {
                             Direction
                         </Dirh>
                         <Side>
-                            <Sideleft>
+                            <Sideleft onClick={left}>
                                 <Lefttop>
 
                                 </Lefttop>
@@ -171,7 +177,7 @@ export default function Home() {
 
                                 </Leftbottom>
                             </Sideleft>
-                            <Sideright>
+                            <Sideright onClick={right}>
                                 <Righttop>
 
                                 </Righttop>
@@ -187,27 +193,27 @@ export default function Home() {
                         </Colorh>
                         <Colordiv>
                             <Colors>
-                                <Col className="green">
+                                <Col className="green" onClick={green}>
                                 </Col>
                             </Colors>
                             <Colors>
-                                <Col className="purple">
+                                <Col className="purple" onClick={purple}>
                                 </Col>
                             </Colors>
                             <Colors>
-                                <Col className="cyan">
+                                <Col className="cyan" onClick={cyan}>
                                 </Col>
                             </Colors>
                             <Colors>
-                                <Col className="blue">
+                                <Col className="blue" onClick={blue}>
                                 </Col>
                             </Colors>
                             <Colors>
-                                <Col className="orange">
+                                <Col className="orange" onClick={orange}>
                                 </Col>
                             </Colors>
                             <Colors>
-                                <Col className="red">
+                                <Col className="red" onClick={red}>
                                 </Col>
                             </Colors>
                         </Colordiv>
@@ -217,28 +223,7 @@ export default function Home() {
         </Homesec>
     )
 }
-const Color = styled.div``
-const Colorh = styled.h4`
-    font-weight:700;
-    margin-bottom: 10%;`
-const Colordiv = styled.div`
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;`
-const Colors = styled.div`
-    width:65px;
-    height:65px;
-    box-shadow:0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-    border-radius:10px;
-    cursor:pointer;
-    padding: 5%;
-    margin-bottom:10%;
-    display:flex;`
-const Col = styled.div`
-    width:25px;
-    height:25px;
-    border-radius: 50% 0% 50% 0;
-    margin:auto;`
+
 
 
 
@@ -700,7 +685,10 @@ const Settings = styled.div`
     right: 0;
     background: #fff;
     padding: 9px;
-    border-radius: 50% 0 40% 50%;`
+    border-radius: 50% 0 40% 50%;
+    &:hover{
+        cursor:pointer;
+    }`
 
 const Mobleft = styled.nav`
     background:#fff;
@@ -780,7 +768,7 @@ const Closediv = styled.div`
 const Setting = styled.div`
     position: fixed;
     top: 0;
-    right: 0px;
+    right: -300px;
     background: #fff;
     padding: 30px;
     z-index: 2;
@@ -797,8 +785,11 @@ const Head = styled.div`
 const S = styled.h3`
     font-weight:700;`
 const Headclose = styled.div`
-    width:25px;`
-    const Dir = styled.div``
+    width:25px;
+    &:hover{
+        cursor:pointer;
+    }`
+const Dir = styled.div``
 const Dirh = styled.h4`
     margin-bottom: 10%;
     font-weight:700;`
@@ -850,7 +841,28 @@ const Rightbottom = styled.div`
     margin-right:0;
     margin-left:auto;
     border-radius:5px;`
-
+const Color = styled.div``
+const Colorh = styled.h4`
+    font-weight:700;
+    margin-bottom: 10%;`
+const Colordiv = styled.div`
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;`
+const Colors = styled.div`
+    width:65px;
+    height:65px;
+    box-shadow:0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius:10px;
+    cursor:pointer;
+    padding: 5%;
+    margin-bottom:10%;
+    display:flex;`
+const Col = styled.div`
+    width:25px;
+    height:25px;
+    border-radius: 50% 0% 50% 0;
+    margin:auto;`
 
 
 function active(){
@@ -873,4 +885,26 @@ function inactive(){
     closediv.classList.add("closediv_inactive");
     closediv.classList.remove("closediv_active");
 }
+function set(){
+    var div = document.getElementById("settings_div");
 
+    div.classList.add("active");
+}
+function setinactive(){
+    var div = document.getElementById("settings_div");
+
+    div.classList.remove("active");
+}
+
+function left(){
+    var div = document.getElementById("settings_div");
+
+    div.classList.remove("right");
+    div.classList.add("left");
+}
+function right(){
+    var div = document.getElementById("settings_div");
+
+    div.classList.remove("left");
+    div.classList.add("right");
+}
