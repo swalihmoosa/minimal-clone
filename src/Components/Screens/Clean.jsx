@@ -58,46 +58,232 @@ export default function Clean() {
     )
 }
 const Cleansec = styled.section`
-    padding: 0% 0 65%;`
+    padding: 0% 0 65%;
+    @media all and (max-width: 1280px){
+        padding: 5% 0 65%;
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const H5 = styled.h5`
     font-size: 20px;
     color: #85888b;
     font-weight: 700;
-    margin-bottom: 2%;`
+    margin-bottom: 2%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const H6 = styled.h6`
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 2%;
-    width: 40%;`
+    width: 40%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        width: 65%;
+    }
+    @media all and (max-width: 768px){
+        width: 75%;
+    }
+    @media all and (max-width: 640px){
+        width: 95%;
+        font-size: 33px;
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Div = styled.div`
     position: relative;`
 const One = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Two = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;@media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Three = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Four = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Five = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Six = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Seven = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Eight = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Nine = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Ten = styled.div`
     position: absolute;
-    top: 0;`
+    top: 0;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`

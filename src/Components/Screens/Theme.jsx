@@ -65,13 +65,16 @@ export default function Theme() {
 }
 const Themesec = styled.section`
     padding: 8% 0;
-    position: relative;`
+    position: relative;
+    @media all and (max-width: 768px){
+        padding: 15% 0;
+    }`
 const H5 = styled.h5`
     font-size: 20px;
     color: #85888b;
     font-weight: 700;
     margin-bottom: 2%;
-    text-align: center;`
+    text-align: center;}`
 const H6 = styled.h6`
     font-size: 40px;
     font-weight: 700;
@@ -98,7 +101,29 @@ const Right = styled.div`
 const Ul = styled.ul`
     position:absolute;
     top: 30%;
-    right: 10%;`
+    right: 10%;
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+        top: 90%;
+        display:flex;
+        justify-content:space-between;
+        width:60%;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
+    }`
 const Li = styled.li`
     width: 20px;
     height: 20px;
@@ -109,5 +134,21 @@ const Li = styled.li`
     }
     &:hover{
         cursor:pointer;
+    }
+    @media all and (max-width: 1280px){
+    }
+    @media all and (max-width: 980px){
+        width: 10px;
+        height: 10px;
+    }
+    @media all and (max-width: 768px){
+    }
+    @media all and (max-width: 640px){
+    }
+    @media all and (max-width: 480px){
+    }
+    @media all and (max-width: 360px){
+    }
+    @media all and (max-width: 320px){
     }`
 

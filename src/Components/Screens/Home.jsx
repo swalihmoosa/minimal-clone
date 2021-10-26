@@ -475,6 +475,7 @@ const Live = styled.a`
 const Thunder = styled.div`
     width: 10%;
     @media all and (max-width: 1280px){
+        width: 7%;
     }
     @media all and (max-width: 980px){
     }
