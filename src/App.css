@@ -72,6 +72,25 @@ ul li#red{
 	background: red;
 }
 
+div.green{
+	background: green;
+}
+div.purple{
+	background: purple;
+}
+div.cyan{
+	background: cyan;
+}
+div.blue{
+	background: blue;
+}
+div.orange{
+	background: orange;
+}
+div.red{
+	background: red;
+}
+
 section#home.green .button{
 	background: #4eac56;
 }

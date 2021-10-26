@@ -149,10 +149,99 @@ export default function Home() {
                 <Settings id="settings">
                     <img src={cog} alt="Setting" />
                 </Settings>
+                <Setting>
+                    <Head>
+                        <S>
+                            Settings
+                        </S>
+                        <Headclose>
+                            <img src={close} alt="Close" />
+                        </Headclose>
+                    </Head>
+                    <Dir>
+                        <Dirh>
+                            Direction
+                        </Dirh>
+                        <Side>
+                            <Sideleft>
+                                <Lefttop>
+
+                                </Lefttop>
+                                <Leftbottom>
+
+                                </Leftbottom>
+                            </Sideleft>
+                            <Sideright>
+                                <Righttop>
+
+                                </Righttop>
+                                <Rightbottom>
+                                    
+                                </Rightbottom>
+                            </Sideright>
+                        </Side>
+                    </Dir>
+                    <Color>
+                        <Colorh>
+                            Colors
+                        </Colorh>
+                        <Colordiv>
+                            <Colors>
+                                <Col className="green">
+                                </Col>
+                            </Colors>
+                            <Colors>
+                                <Col className="purple">
+                                </Col>
+                            </Colors>
+                            <Colors>
+                                <Col className="cyan">
+                                </Col>
+                            </Colors>
+                            <Colors>
+                                <Col className="blue">
+                                </Col>
+                            </Colors>
+                            <Colors>
+                                <Col className="orange">
+                                </Col>
+                            </Colors>
+                            <Colors>
+                                <Col className="red">
+                                </Col>
+                            </Colors>
+                        </Colordiv>
+                    </Color>
+                </Setting>
             </section>
         </Homesec>
     )
 }
+const Color = styled.div``
+const Colorh = styled.h4`
+    font-weight:700;
+    margin-bottom: 10%;`
+const Colordiv = styled.div`
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;`
+const Colors = styled.div`
+    width:65px;
+    height:65px;
+    box-shadow:0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius:10px;
+    cursor:pointer;
+    padding: 5%;
+    margin-bottom:10%;
+    display:flex;`
+const Col = styled.div`
+    width:25px;
+    height:25px;
+    border-radius: 50% 0% 50% 0;
+    margin:auto;`
+
+
+
 const Homesec = styled.section`
     background: linear-gradient(to right, #161c24 , #434a52);`
 const Header = styled.header`
@@ -688,6 +777,80 @@ const Closediv = styled.div`
     }
     @media all and (max-width: 320px){
     }`
+const Setting = styled.div`
+    position: fixed;
+    top: 0;
+    right: 0px;
+    background: #fff;
+    padding: 30px;
+    z-index: 2;
+    bottom: 0;
+    width: 280px;
+    padding-top: 40px;
+    transition: all 0.4s ease-in;`
+const Head = styled.div`
+    display:flex;
+    justify-content:space-between;
+    border-bottom:2px solid grey;
+    padding-bottom: 5%;
+    margin-bottom: 20%;`
+const S = styled.h3`
+    font-weight:700;`
+const Headclose = styled.div`
+    width:25px;`
+    const Dir = styled.div``
+const Dirh = styled.h4`
+    margin-bottom: 10%;
+    font-weight:700;`
+const Side = styled.div`
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 20%;`
+const Sideleft = styled.div`
+    width:100px;
+    height:100px;
+    box-shadow:0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius:10px;
+    cursor:pointer;
+    padding: 5%;`
+const Sideright = styled.div`
+    width:100px;
+    height:100px;
+    box-shadow:0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius:10px;
+    cursor:pointer;
+    padding: 5%;`
+const Lefttop = styled.div`
+    width:100%;
+    height:25%;
+    background:#b9c1c9;
+    margin-left:0;
+    margin-right:auto;
+    border-radius:5px;
+    margin-bottom: 15%;`
+const Leftbottom = styled.div`
+    width:75%;
+    height:25%;
+    background:#b9c1c9;
+    margin-left:0;
+    margin-right:auto;
+    border-radius:5px;`
+const Righttop = styled.div`
+    width:100%;
+    height:25%;
+    background:#b9c1c9;
+    margin-right:0;
+    margin-left:auto;
+    border-radius:5px;
+    margin-bottom: 15%;`
+const Rightbottom = styled.div`
+    width:75%;
+    height:25%;
+    background:#b9c1c9;
+    margin-right:0;
+    margin-left:auto;
+    border-radius:5px;`
+
 
 
 function active(){
