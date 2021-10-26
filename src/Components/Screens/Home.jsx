@@ -192,28 +192,28 @@ export default function Home() {
                             Colors
                         </Colorh>
                         <Colordiv>
-                            <Colors>
-                                <Col className="green" onClick={green}>
+                            <Colors onClick={green}>
+                                <Col className="green">
                                 </Col>
                             </Colors>
-                            <Colors>
+                            <Colors onClick={purple}>
                                 <Col className="purple" onClick={purple}>
                                 </Col>
                             </Colors>
-                            <Colors>
-                                <Col className="cyan" onClick={cyan}>
+                            <Colors onClick={cyan}>
+                                <Col className="cyan" >
                                 </Col>
                             </Colors>
-                            <Colors>
-                                <Col className="blue" onClick={blue}>
+                            <Colors onClick={blue}>
+                                <Col className="blue" >
                                 </Col>
                             </Colors>
-                            <Colors>
-                                <Col className="orange" onClick={orange}>
+                            <Colors onClick={orange}>
+                                <Col className="orange" >
                                 </Col>
                             </Colors>
-                            <Colors>
-                                <Col className="red" onClick={red}>
+                            <Colors onClick={red}>
+                                <Col className="red">
                                 </Col>
                             </Colors>
                         </Colordiv>
@@ -894,6 +894,8 @@ function setinactive(){
     var div = document.getElementById("settings_div");
 
     div.classList.remove("active");
+    div.classList.remove("right");
+    div.classList.remove("left");
 }
 
 function left(){
