@@ -3,6 +3,7 @@ import './App.css';
 import Clean from './Components/Screens/Clean';
 import Dark from './Components/Screens/Dark';
 import Footer from './Components/Screens/Footer';
+// import Head from './Components/Screens/Head';
 import Helps from './Components/Screens/Helps';
 import Home from './Components/Screens/Home'
 import Interface from './Components/Screens/Interface';
@@ -13,6 +14,7 @@ export default function App() {
   return (
     <>
       <Home />
+      {/* <Head /> */}
       <Helps />
       <Interface />
       <Dark />
